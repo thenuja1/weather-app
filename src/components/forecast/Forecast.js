@@ -4,7 +4,7 @@ import classes from './Forecast.module.css';
 
 const Forecast = () => {
     let [city, setCity] = useState('');
-    let [unit, setUnit] = useState('imperial');
+    let [unit, setUnit] = useState('metric');
     let [responseObj, setResponseObj] = useState({});
     let [error, setError] = useState(false);
     let [loading, setLoading] = useState(false);
@@ -27,7 +27,7 @@ function getForecast(e) {
         {"method": "GET",
          "headers": {
             "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-            "x-rapidapi-key": "8c2c2fef07msh10d93721ff32400p16cad6jsn381f169eb509"
+            "x-rapidapi-key": process.env.REACT_APP_API_KEY
         }
     })
     

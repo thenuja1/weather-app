@@ -12,18 +12,17 @@
     box-shadow: 0 0 10px rgb(50, 100, 153);
 }
 .Radio {
-    font-size: small;
+    font-size: 16px;
     padding: 0.5rem;
 }
 
 .Button {
     display: block;
-    margin: 10px auto;
-    padding: .5rem;
-    font-size: 1em;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    font-size: 1.2rem;
     background: rgb(52, 115, 136);
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    margin: 5px auto;
 }
